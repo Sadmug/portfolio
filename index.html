@@ -1,151 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jugurtha Sadeg — Graphic Designer & Illustrator</title>
-<meta name="description" content="Jugurtha Sadeg (SadMug) — graphic designer & illustrator based in Algeria. Branding, illustration, and visual design.">
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jugurtha Sadeg | SADMUG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,400&display=swap" rel="stylesheet">
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Google Sans Flex', sans-serif;
+    }
+    body{
+        display: block;
+        height: 100vh;
+        padding-bottom: 130px;
+        box-sizing: border-box;
+        background-color: #F2ECE8;
+        background-size: 40px 40px;
+        background-image:
+        linear-gradient(to right, #232323 1px, transparent 1px),
+        linear-gradient(to bottom, #232323 1px, transparent 1px);
+    }
+    .rectangle-stack{
+        position: relative;
+        width: calc(100% - 260px);
+        margin: 30px auto 0;
+    }
+    .rectangle{
+        position: absolute;
+        inset: 0;
+        border: 2px solid #DB393C;
+        background-color: #F2ECE8;
+        box-sizing: border-box;
+    }
+    .rectangle-back{
+        transform: translate(20px, 20px);
+    }
+    .rectangle-front{
+        position: relative;
+        inset: auto;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px;
+    }
+    .intro-text{
+        max-width: 720px;
+        font-weight: 400;
+        color: #DB393C;
+    }
+    .behance-embed{
+        position: absolute;
+        inset: 0;
+        display: block;
+        width: 100%;
+        height: 600px;
+        z-index: 1;
+    }
+    .embed-stack{
+        position: relative;
+        width: calc(100% - 260px);
+        height: 600px;
+        margin: 65px auto 0;
+    }
+    .link-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 80px);
+        grid-auto-rows: 80px;
+        gap: 65px;
+        width: max-content;
+        margin: 65px auto 0;
+    }
+    .link-square{
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        width: 80px;
+        height: 80px;
+        border: 2px solid #DB393C;
+        background-color: #F2ECE8;
+        box-sizing: border-box;
+    }
+    .link-square:hover{
+        background-color: #232323;
+    }
+    .link-square img{
+        display: block;
+        width: 80px;
+        height: 80px;
+    }
+    .link-item{
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+    .link-background{
+        position: absolute;
+        inset: 0;
+        border: 2px solid #DB393C;
+        background-color: #F2ECE8;
+        box-sizing: border-box;
+        transform: translate(20px, 20px);
+    }
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 65px;
+        margin-top: 130px;
+        color: #F2ECE8;
+        background-color: #DB393C;
+        text-align: center;
+    }
+    </style>
 </head>
 <body>
-
-<header>
-  <nav class="nav">
-    <div class="nav-brand">
-      <span class="name">JUGURTHA SADEG</span>
-      <span class="nav-mark">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.66 206.51" role="img" aria-label="sadmug"><title>sadmug</title><g fill="#f2ece8"><path d="M184.45,98.08l71.56.15c14.53,0,24.75-2.23,33.26-7.21,14.67-8.64,22.39-22.78,22.39-40.85s-7.59-32.61-21.87-41.12c-9.3-5.5-19.51-7.56-37.06-7.6l-68.28-.14Zm9.69-8.77V10.08l59,.15c14.53,0,24.09,2,31.16,6.15,11.13,6.81,17.55,19,17.55,33.39,0,12.71-5,23.84-13.88,31-7.73,6.15-17.68,8.69-34.83,8.64Z"/><path d="M0,206.51H9.69V120.35L46,206.51h8.39l36.4-86.16v86.16h9.69V109.74H85.38L50.29,192.11,15.06,109.74H0Z"/><path d="M245.92,160.16v8.77H300c-1.44,6.28-4.72,11.65-10.22,17.15-7.46,7.47-17.68,11.53-28.94,11.53-23.7,0-42.43-18.07-42.43-41.12,0-23.31,18.34-41.25,42.3-41.25,14.93,0,27.5,6.81,34.18,18.59h10.87c-6.42-16.5-24.75-27.5-45.83-27.5-28.81,0-51.34,21.87-51.34,49.9,0,28.41,22.92,50.28,52.64,50.28,15.33,0,28.42-5.63,37.72-16.37,7.86-9,12.05-19.12,12.7-30Z"/><path d="M110.74,98.08V69.83c0-12.44,2-19.77,6.81-26.19,5.76-7.59,15.32-11.91,26.06-11.91S164,36.05,169.8,43.64c4.85,6.42,6.81,13.75,6.81,26.19V98.08h-9.69V69.83c0-8.77-1.44-15.45-4.45-20-3.67-5.63-10.87-9.17-18.86-9.17s-15.06,3.54-18.73,9.17c-3,4.58-4.45,11.26-4.45,20V98.08Z"/><path d="M166.92,1.31h9.69V27h-9.69Z"/><path d="M110.74,1.31h9.69V27h-9.69Z"/><path d="M110.74,140.16v28.25c0,12.44,2,19.77,6.81,26.19,5.76,7.59,15.32,11.91,26.06,11.91S164,202.19,169.8,194.6c4.85-6.42,6.81-13.75,6.81-26.19V140.16h-9.69v28.25c0,8.77-1.44,15.45-4.45,20-3.67,5.63-10.87,9.17-18.86,9.17s-15.06-3.54-18.73-9.17c-3-4.58-4.45-11.26-4.45-20V140.16Z"/><path d="M179.47,150v3.45h7.27c3.12,0,5.51.51,7.14,1.58a8.49,8.49,0,0,1,0,13.38c-1.63,1.08-4,1.6-7.14,1.6h-7.27c0,1.19-.05,2.35-.11,3.46h7.38c4.43,0,7-.71,9.33-2.43a12.31,12.31,0,0,0,0-18.61c-2.28-1.72-4.9-2.43-9.33-2.43Z"/><path d="M158.08,147.15c-9.73.15-9.06,9.51-17.44,13.67-5.51,2.73-12.29-2.62-17.14-7.79V168.4c0,8.49,1.36,14.44,3.93,18.36,3,4.66,9.18,7.79,16.18,7.79s13.26-3.13,16.29-7.78c2.58-3.92,4-9.89,4-18.37V147.9l-.09,0a23,23,0,0,0-5.69-.73Z"/><path d="M25.8,0C10.08.39,0,11.26,0,27.11v.26C.12,42.82,10.69,54.21,25.8,54.21H74.64c10.61.79,16.9,7.21,16.9,17v.36c-.05,9.64-7.11,16.66-16.9,16.66v9.82c15.11,0,25.68-11.13,25.8-26.58v-.26c0-15.85-10.08-26.72-25.8-27.11H25.8C16,44.13,9,37.11,8.9,27.47v-.36c0-9.82,6.29-16.24,16.9-17Z"/><path d="M135.78,112.07c-5.09.12-8.35,3.64-8.35,8.76v.09c0,5,3.46,8.68,8.35,8.68h15.8c3.43.26,5.46,2.33,5.46,5.51v.12a5.27,5.27,0,0,1-5.46,5.39v3.17c4.88,0,8.3-3.6,8.34-8.6v-.08c0-5.13-3.26-8.64-8.34-8.77h-15.8a5.27,5.27,0,0,1-5.47-5.39v-.12c0-3.17,2-5.25,5.47-5.5Z"/></g></svg>
-      </span>
+	<div class="rectangle-stack">
+		<div class="rectangle rectangle-back"></div>
+        <div class="rectangle rectangle-front">
+            <p class="intro-text">Hi, as you can see i am still laying the brick on this site, While it comes together, scroll down, you'll find my portfolio on Behance and all my socials</p>
+        </div>
+	</div>
+    <div class="embed-stack">
+        <div class="rectangle rectangle-back"></div>
+        <iframe class="behance-embed" src="https://www.behance.net/embed/project/254671313?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
     </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
-      <span></span><span></span><span></span>
-    </button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home" data-nav>Home</a></li>
-      <li><a href="#experience" data-nav>Experience & Skills</a></li>
-      <li><a href="#portfolio" data-nav>Portfolio</a></li>
-      <li><a href="#contact" data-nav>Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main>
-
-  <!-- HOME -->
-  <section id="home">
-    <div class="wrap">
-      <div class="hero-inner">
-        <h1>Jugurtha Sadeg</h1>
-        <span class="hero-mark">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 311.66 206.51" role="img" aria-label="sadmug"><title>sadmug</title><g fill="#f2ece8"><path d="M184.45,98.08l71.56.15c14.53,0,24.75-2.23,33.26-7.21,14.67-8.64,22.39-22.78,22.39-40.85s-7.59-32.61-21.87-41.12c-9.3-5.5-19.51-7.56-37.06-7.6l-68.28-.14Zm9.69-8.77V10.08l59,.15c14.53,0,24.09,2,31.16,6.15,11.13,6.81,17.55,19,17.55,33.39,0,12.71-5,23.84-13.88,31-7.73,6.15-17.68,8.69-34.83,8.64Z"/><path d="M0,206.51H9.69V120.35L46,206.51h8.39l36.4-86.16v86.16h9.69V109.74H85.38L50.29,192.11,15.06,109.74H0Z"/><path d="M245.92,160.16v8.77H300c-1.44,6.28-4.72,11.65-10.22,17.15-7.46,7.47-17.68,11.53-28.94,11.53-23.7,0-42.43-18.07-42.43-41.12,0-23.31,18.34-41.25,42.3-41.25,14.93,0,27.5,6.81,34.18,18.59h10.87c-6.42-16.5-24.75-27.5-45.83-27.5-28.81,0-51.34,21.87-51.34,49.9,0,28.41,22.92,50.28,52.64,50.28,15.33,0,28.42-5.63,37.72-16.37,7.86-9,12.05-19.12,12.7-30Z"/><path d="M110.74,98.08V69.83c0-12.44,2-19.77,6.81-26.19,5.76-7.59,15.32-11.91,26.06-11.91S164,36.05,169.8,43.64c4.85,6.42,6.81,13.75,6.81,26.19V98.08h-9.69V69.83c0-8.77-1.44-15.45-4.45-20-3.67-5.63-10.87-9.17-18.86-9.17s-15.06,3.54-18.73,9.17c-3,4.58-4.45,11.26-4.45,20V98.08Z"/><path d="M166.92,1.31h9.69V27h-9.69Z"/><path d="M110.74,1.31h9.69V27h-9.69Z"/><path d="M110.74,140.16v28.25c0,12.44,2,19.77,6.81,26.19,5.76,7.59,15.32,11.91,26.06,11.91S164,202.19,169.8,194.6c4.85-6.42,6.81-13.75,6.81-26.19V140.16h-9.69v28.25c0,8.77-1.44,15.45-4.45,20-3.67,5.63-10.87,9.17-18.86,9.17s-15.06-3.54-18.73-9.17c-3-4.58-4.45-11.26-4.45-20V140.16Z"/><path d="M179.47,150v3.45h7.27c3.12,0,5.51.51,7.14,1.58a8.49,8.49,0,0,1,0,13.38c-1.63,1.08-4,1.6-7.14,1.6h-7.27c0,1.19-.05,2.35-.11,3.46h7.38c4.43,0,7-.71,9.33-2.43a12.31,12.31,0,0,0,0-18.61c-2.28-1.72-4.9-2.43-9.33-2.43Z"/><path d="M158.08,147.15c-9.73.15-9.06,9.51-17.44,13.67-5.51,2.73-12.29-2.62-17.14-7.79V168.4c0,8.49,1.36,14.44,3.93,18.36,3,4.66,9.18,7.79,16.18,7.79s13.26-3.13,16.29-7.78c2.58-3.92,4-9.89,4-18.37V147.9l-.09,0a23,23,0,0,0-5.69-.73Z"/><path d="M25.8,0C10.08.39,0,11.26,0,27.11v.26C.12,42.82,10.69,54.21,25.8,54.21H74.64c10.61.79,16.9,7.21,16.9,17v.36c-.05,9.64-7.11,16.66-16.9,16.66v9.82c15.11,0,25.68-11.13,25.8-26.58v-.26c0-15.85-10.08-26.72-25.8-27.11H25.8C16,44.13,9,37.11,8.9,27.47v-.36c0-9.82,6.29-16.24,16.9-17Z"/><path d="M135.78,112.07c-5.09.12-8.35,3.64-8.35,8.76v.09c0,5,3.46,8.68,8.35,8.68h15.8c3.43.26,5.46,2.33,5.46,5.51v.12a5.27,5.27,0,0,1-5.46,5.39v3.17c4.88,0,8.3-3.6,8.34-8.6v-.08c0-5.13-3.26-8.64-8.34-8.77h-15.8a5.27,5.27,0,0,1-5.47-5.39v-.12c0-3.17,2-5.25,5.47-5.5Z"/></g></svg>
-        </span>
-        <p class="role">Graphic Designer &amp; Illustrator — Algeria</p>
-        <p>Curiosity about the world and a drive to create sit at the center of everything I make — illustration, branding, and visual design built around ideas worth a second look.</p>
-        <a href="#portfolio" class="btn">See the work</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCE & SKILLS -->
-  <section id="experience">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">background</span>
-        <h2>Experience &amp; Skills</h2>
-      </div>
-
-      <div class="exp-grid reveal">
-        <div class="card">
-          <span class="meta">Jul – Aug 2024</span>
-          <h3>Design Intern — ICŌNE Agency</h3>
-          <p>Supported the design team on brand identity and visual asset projects for various client accounts. Assisted in concept development, layout refinement, and preparing deliverables for client presentations. Gained hands-on experience in a fast-paced brand creation environment.</p>
-        </div>
-        <div class="card">
-          <span class="meta">GoMyCode · 2024-2025</span>
-          <h3>Graphic Design — Adobe Certified</h3>
-          <p>Foundational and applied coursework in visual design principles, layout, and digital illustration using the Adobe Creative Suite. Applied these skills to brand assets, marketing materials, and presentations through structured, hands-on projects and practical exercises. Developed a working foundation in typography and brand identity within a project-based training environment.</p>
-        </div>
-      </div>
-
-      <div class="skills-block reveal">
-        <h3>Skills</h3>
-        <div class="pills">
-          <span class="pill">Illustration</span>
-          <span class="pill">Brand &amp; Logo Design</span>
-          <span class="pill">Layout &amp; Editorial Design</span>
-          <span class="pill">Doodle &amp; Character Art</span>
-        </div>
-        <h3>Tools</h3>
-        <div class="pills">
-          <span class="pill tool">Illustrator</span>
-          <span class="pill tool">Photoshop</span>
-          <span class="pill tool">GIMP</span>
-          <span class="pill tool">Krita</span>
-          <span class="pill tool">Inkscape</span>
-          <span class="pill tool">Affinity</span>
-          <span class="pill tool">Canva</span>
-          <span class="pill tool">HTML / CSS</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PORTFOLIO -->
-  <section id="portfolio">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">selected work</span>
-        <h2>Portfolio</h2>
-      </div>
-
-      <div class="portfolio-grid reveal">
-        <div class="proj-card">
-          <img class="proj-thumb" src="azar.png" alt="Azar Architecture brand identity">
-          <div class="proj-body">
-            <span class="proj-tag">Branding · 2026</span>
-            <h3>Azar Architecture — Brand Identity</h3>
-            <p>A complete identity system for an architecture studio: logo suite, color palette, and concept documentation, delivered in one week.</p>
-          </div>
-        </div>
-        <div class="proj-card">
-          <img class="proj-thumb" src="sadmug.png" alt="SadMug brand identity">
-          <div class="proj-body">
-            <span class="proj-tag">Branding · 2023</span>
-            <h3>SADMUG — Personal Brand</h3>
-            <p>My personal brand, the first piece of my graphic design journey.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="wrap">
-      <span class="eyebrow">let's talk</span>
-      <h2>Get In Touch</h2>
-      <p class="lead">Open to freelance illustration, branding, and design work. Reach out and let's make something.</p>
-      <div class="contact-links">
-        <a class="email" href="mailto:jugurthasadeg@gmail.com">jugurthasadeg@gmail.com</a>
-        <div class="phones">
-          <a href="tel:+213556516714">+213 556 51 67 14</a>
-        </div>
-        <div class="socials">
-          <a href="https://www.malt.com/profile/jugurthasadeg" target="_blank" rel="noopener noreferrer">Malt</a>
-          <a href="https://www.linkedin.com/in/jugurtha-sadeg-310175426/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://www.instagram.com/jugurthasadeg/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://www.behance.net/sadmug" target="_blank" rel="noopener noreferrer">Behance</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer>sadmug © 2026</footer>
-
-<script src="script.js"></script>
-
+    <nav class="link-grid" aria-label="Social links">
+        <div class="link-item"><div class="link-background"></div><a class="link-square" href="https://www.linkedin.com/in/jugurtha-sadeg-310175426" aria-label="LinkedIn"><img src="icons/linkedin.png" alt=""></a></div>
+        <div class="link-item"><div class="link-background"></div><a class="link-square" href="https://wa.me/213556516714" aria-label="WhatsApp"><img src="icons/whatsapp.png" alt=""></a></div>
+        <div class="link-item"><div class="link-background"></div><a class="link-square" href="https://www.malt.com/profile/jugurthasadeg" aria-label="Malt"><img src="icons/malt.png" alt=""></a></div>
+        <div class="link-item"><div class="link-background"></div><a class="link-square" href="https://www.fiverr.com/s/NeBrgKG" aria-label="Fiverr"><img src="icons/fiverr.png" alt=""></a></div>
+        <div class="link-item"><div class="link-background"></div><a class="link-square" href="https://www.behance.net/sadmug" aria-label="Behance"><img src="icons/behance.png" alt=""></a></div>
+        <div class="link-item"><div class="link-background"></div><a class="link-square" href="https://pin.it/3id2Ga9f1" aria-label="Pinterest"><img src="icons/pinterest.png" alt=""></a></div>
+        <div class="link-item"><div class="link-background"></div><a class="link-square" href="https://www.instagram.com/jugurthasadeg/" aria-label="Instagram"><img src="icons/instagram.png" alt=""></a></div>
+        <div class="link-item"><div class="link-background"></div><a class="link-square" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" aria-label="Secret"><img src="icons/secret.png" alt=""></a></div>
+    </nav>
+    <footer>sadmug © 2026</footer>
 </body>
 </html>
