@@ -5,6 +5,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jugurtha Sadeg | SADMUG</title>
+    <meta name="description" content="Need to level up your brand or business? I've got you covered.">
+    <meta property="og:title" content="Jugurtha Sadeg | SADMUG">
+    <meta property="og:description" content="Jugurtha Sadeg, Graphic Designer | Illustrator">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="opengraph.png">
+    <meta property="og:image:alt" content="Jugurtha Sadeg portfolio preview">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jugurtha Sadeg | SADMUG">
+    <meta name="twitter:description" content="Jugurtha Sadeg, Graphic Designer | Illustrator">
+    <meta name="twitter:image" content="opengraph.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,400&display=swap" rel="stylesheet">
@@ -71,11 +81,13 @@
         margin: 65px auto 0;
     }
     .link-grid{
-        display: grid;
-        grid-template-columns: repeat(4, 80px);
-        grid-auto-rows: 80px;
-        gap: 65px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 32px;
         width: max-content;
+        max-width: calc(100% - 40px);
         margin: 65px auto 0;
     }
     .link-square{
@@ -138,9 +150,9 @@
             height: 100%;
         }
         .link-grid{
-            grid-template-columns: repeat(2, 64px);
-            grid-auto-rows: 64px;
-            gap: 36px 28px;
+            flex-wrap: wrap;
+            gap: 28px 22px;
+            width: min(420px, calc(100% - 32px));
         }
         .link-item,
         .link-square,
@@ -161,10 +173,6 @@
             <p class="intro-text">I am Jugurtha Sadeg, Graphic Designer & Illustrator.<br>Need to level up your brand/business? I've got you covered.</p>
         </div>
 	</div>
-    <div class="embed-stack">
-        <div class="rectangle rectangle-back"></div>
-        <iframe class="behance-embed" src="https://www.behance.net/embed/project/254671313?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
-    </div>
     <nav class="link-grid" aria-label="Social links">
         <div class="link-item"><div class="link-background"></div><a class="link-square" href="https://www.linkedin.com/in/jugurtha-sadeg-310175426" aria-label="LinkedIn"><img src="icons/linkedin.png" alt=""></a></div>
         <div class="link-item"><div class="link-background"></div><a class="link-square" href="https://wa.me/213556516714" aria-label="WhatsApp"><img src="icons/whatsapp.png" alt=""></a></div>
@@ -175,6 +183,10 @@
         <div class="link-item"><div class="link-background"></div><a class="link-square" href="https://www.instagram.com/jugurthasadeg/" aria-label="Instagram"><img src="icons/instagram.png" alt=""></a></div>
         <div class="link-item"><div class="link-background"></div><a class="link-square" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" aria-label="Secret"><img src="icons/secret.png" alt=""></a></div>
     </nav>
+    <div class="embed-stack">
+        <div class="rectangle rectangle-back"></div>
+        <iframe class="behance-embed" src="https://www.behance.net/embed/project/254671313?ilo0=1" height="316" width="404" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
     <footer>sadmug © 2026</footer>
 </body>
 </html>
